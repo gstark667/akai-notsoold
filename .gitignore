@@ -1,0 +1,6 @@
+Makefile
+akai
+objects
+
+*.swp
+*.qmake.stash
