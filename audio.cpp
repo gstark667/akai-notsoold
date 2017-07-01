@@ -16,11 +16,11 @@ Audio::Audio(): QMainWindow()
     m_format->setSampleType(QAudioFormat::UnSignedInt);
 
     m_input = new QAudioInput(*m_format);
-    m_input->setBufferSize(32000);
+    m_input->setBufferSize(16000);
     m_inputStream = m_input->start();
 
     m_output = new QAudioOutput(*m_format);
-    m_output->setBufferSize(32000);
+    m_output->setBufferSize(16000);
     m_outputStream = m_output->start();
 
     m_sock = new QTcpSocket();
